@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+
+header {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  padding: 1em 2em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Aladin', cursive;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  img {
+    width: 5em;
+  }
+  p {
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-left: .5em;
+    position: relative;
+    &::after {
+      content: "";
+      width: 100%;
+      position: absolute;
+      height: 3px;
+      background: #fff;
+      top: 100%;
+      left: 0;
+    }
+  }
+}
+
+nav {
+  line-height: 1;
+  .menu_list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+  .menu_item {
+    margin: 0 1em;
+  }
+
+  .menu_link {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    transition: color 0.3s;
+    text-decoration: none;
+    outline: none;
+    font-size: 1.05em;
+    font-weight: bold;
+    display: block;
+    padding: 0.7em;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .menu_link:hover,
+  .menu_link:focus {
+    color: #929292;
+  }
+
+   .menu_link::before,
+   .menu_link::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+    border: 3px solid #ffb500;
+    transition: transform 0.3s, opacity 0.3s;
+    transition-timing-function: cubic-bezier(0.17, 0.67, 0.05, 1.29);
+  }
+
+   .menu_link::before {
+    top: 0;
+    left: 0;
+    border-width: 3px 0 0 3px;
+    transform: translate3d(10px, 10px, 0);
+  }
+
+   .menu_link::after {
+    right: 0;
+    bottom: 0;
+    border-width: 0 3px 3px 0;
+    transform: translate3d(-10px, -10px, 0);
+  }
+
+   .menu_item-current.menu_link::before,
+   .menu_item-current.menu_link::after {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

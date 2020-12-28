@@ -1,0 +1,48 @@
+.ing-control-wrapper {
+  display: flex;
+  padding: 1em;
+  margin: 0 1em 1em 0;
+  border: 2px dashed #fff;
+  border-radius: 1em;
+  background: #231f20;
+  justify-content: space-between;
+  .image-wrapper {
+    flex-basis: calc(30% - 1em);
+    img {
+      max-width: 100%;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  .content-wrapper {
+    flex-basis: calc(70% - 1em);
+  }
+  .control-detail {
+    display: flex;
+    justify-content: space-between;
+    h3 {
+      font-size: 2rem;
+      font-family: 'Aladin', cursive;
+      font-weight: bold;
+    }
+  }
+  .details {
+    display: flex;
+    margin: 0.7em 0;
+    .detail {
+      margin-right: 1em;
+    }
+  }
+  .button-wrapper {
+    button {
+      background: #ffb500;
+      width: 2rem;
+      outline: none;
+      border: 2px solid #fff;
+      height: 2rem;
+      border-radius: 50%;
+      margin: 0 1rem;
+    }
+  }
+}
