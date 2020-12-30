@@ -1,5 +1,5 @@
 .product-wrapper {
-  flex-basis: 25%;
+  flex-basis: calc(25% - 2em);
   margin: 1em;
   height: 73%;
   background: #1E2326;

@@ -19,3 +19,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.hide-scroll {
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

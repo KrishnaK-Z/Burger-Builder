@@ -8,9 +8,6 @@
   .burger-controller-wrapper {
     flex-basis: calc(50% - 2rem);
     height: 100%;
-    overflow-y: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
   }
 
   .burger-build-wrapper {

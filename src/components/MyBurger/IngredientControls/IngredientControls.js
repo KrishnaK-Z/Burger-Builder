@@ -14,7 +14,7 @@ const controls = [
     { label: "Cucumber", type: 'cucumber', fat: "21g", sat: "10g", sugar: "18g", salt: "1g", img: Cucumber },
     { label: "Tomato", type: 'tomato', fat: "21g", sat: "10g", sugar: "18g", salt: "1g", img: Tomato },
     { label: "Cheese", type: 'cheese', fat: "21g", sat: "10g", sugar: "18g", salt: "1g", img: Cheese }
-]
+];
 
 const IngredientControls = (props) => {
     return (

@@ -1,0 +1,24 @@
+.order-summary-ing {
+  flex-basis: calc(50% - 2rem);
+  margin: 2rem 1rem 0 1rem;
+  display: flex;
+  background: #313033;
+  padding: 1em;
+  border-radius: 1rem;
+  border-bottom: 2px solid #545353;
+  align-items: center;
+  .order-summary-img {
+    flex-basis: 50%;
+    img {
+      max-width: 100%;
+    }
+  }
+  .count {
+    flex-basis: 50%;
+    text-align: center;
+    & > span {
+      margin: 2px;
+      font-weight: bolder;
+    }
+  }
+}

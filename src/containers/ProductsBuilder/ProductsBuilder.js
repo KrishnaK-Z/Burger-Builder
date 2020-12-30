@@ -4,7 +4,11 @@ import Burger from "../../components/MyBurger/Burger/Burger";
 
 const ProductsBuilder = (props) => {
     return (
-        <div className="products-grid-container">
+        <div className="products-grid-container hide-scroll">
+            <Burger/>
+            <Burger/>
+            <Burger/>
+            <Burger/>
             <Burger/>
             <Burger/>
             <Burger/>

@@ -1,0 +1,47 @@
+.order-summary-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  .img-wrapper {
+    flex-basis: 40%;
+    img {
+      max-width: 100%;
+    }
+  }
+  .content-wrapper {
+    flex-basis: 60%;
+    padding: 2em;
+    font-family: 'Aladin', cursive;
+    .title {
+      font-weight: bolder;
+      font-size: 2em;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #fff;
+      text-transform: capitalize;
+    }
+    .ing-summary {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+    .order-summary-footer {
+      display: flex;
+      justify-content: space-between;
+      .price {
+        font-size: 2em;
+        margin-top: 4px;
+        color: #ffb500;
+      }
+      .checkout-btn {
+        border: none;
+        padding: 1rem 2rem;
+        outline: none;
+        background: #ffb500;
+        color: #fff;
+        text-transform: capitalize;
+        border-radius: 1em;
+        font-weight: bold;
+        border-bottom: 2px solid #fff;
+      }
+    }
+  }
+}
